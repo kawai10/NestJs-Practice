@@ -1,11 +1,11 @@
 export interface Board {
-  id: string;
+  id?: string;
   title: string;
   description: string;
   status: BoardStatus;
 }
 
-enum BoardStatus {
+export enum BoardStatus {
   PUBLIC = 'PUBLIC',
   PRIVATE = 'PRIVATE',
 }
